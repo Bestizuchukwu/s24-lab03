@@ -53,19 +53,29 @@ public class IntQueueTest {
     @Test
     public void testNotEmpty() {
         // TODO: write your own unit test
-        fail("Test not implemented");
+        IntQueue queue = new LinkedIntQueue();
+        queue.enqueue(1);
+        assertFalse(queue.isEmpty());
+        // fail("Test not implemented");
     }
 
     @Test
     public void testPeekEmptyQueue() {
         // TODO: write your own unit test
-        fail("Test not implemented");
+        IntQueue queue = new LinkedIntQueue();
+        assertNull(queue.peek());
+        assertTrue(queue.isEmpty());
+        // fail("Test not implemented");
     }
 
     @Test
     public void testPeekNoEmptyQueue() {
         // TODO: write your own unit test
-        fail("Test not implemented");
+        IntQueue queue = new LinkedIntQueue();
+        queue.enqueue(1);
+        assertEquals(Integer.valueOf(1), queue.peek());
+        assertFalse(queue.isEmpty());
+        // fail("Test not implemented");
     }
 
     @Test
@@ -81,7 +91,13 @@ public class IntQueueTest {
     @Test
     public void testDequeue() {
         // TODO: write your own unit test
-        fail("Test not implemented");
+           IntQueue queue = new LinkedIntQueue();
+        queue.enqueue(1);
+        queue.enqueue(2);
+        assertEquals(Integer.valueOf(1), queue.dequeue());
+        assertFalse(queue.isEmpty());
+        assertEquals(Integer.valueOf(2), queue.peek());
+        // fail("Test not implemented");
     }
 
     @Test
