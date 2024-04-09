@@ -1,0 +1,14 @@
+{
+  "java.project.sourcePaths": ["src/test/java/edu/cmu/cs/cs214/rec02"],
+  "java.project.outputPath": "",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ],
+    "java.test.config": {
+      
+      "workingDirectory": "${workspaceFolder}",
+      "testClassPattern": "*Test",
+      "testMethodPattern": "test*"
+    }
+  }
+  
