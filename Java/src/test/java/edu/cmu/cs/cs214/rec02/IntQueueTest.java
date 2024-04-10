@@ -27,6 +27,21 @@ public class IntQueueTest {
     }
 
     @Test
+public void testClear() {
+    // Add elements to the queue
+    mQueue.enqueue(1);
+    mQueue.enqueue(2);
+    mQueue.enqueue(3);
+
+    // Clear the queue
+    mQueue.clear();
+
+    // Ensure the queue is empty after clearing
+    assertTrue(mQueue.isEmpty());
+    assertEquals(0, mQueue.size());
+}
+
+    @Test
     public void testIsEmpty() {
         assertTrue(mQueue.isEmpty());
     }
