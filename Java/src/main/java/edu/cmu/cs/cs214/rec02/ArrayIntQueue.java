@@ -33,7 +33,7 @@ public class ArrayIntQueue implements IntQueue {
     /**
      * The initial size for new instances of ArrayQueue
      */
-    private static final int INITIAL_SIZE = 10;
+    static final int INITIAL_SIZE = 10;
 
     /**
      * Constructs an empty queue with an initial capacity of ten.
